@@ -1,0 +1,194 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+.container{
+    padding-top:500px;
+    display:flex;
+    /* flex-wrap:nowrap; */
+}
+a{
+    text-decoration: none;
+}
+.navbar{
+    /* padding:50px; */
+    margin-left:5vw;
+    position: sticky;
+    top: 0;
+    align-self: flex-start;
+    font-size: 30px;
+    margin-right:3vw;
+    text-align:right;
+}
+.navbar img{
+    margin-bottom: 100px;
+}
+.navbar p{
+    margin-bottom:10px;
+}
+.text_container{
+    flex-basis:60%;
+    margin-left:40px;
+}
+.intro h1{
+    font-size:50px;
+    margin-bottom:20px;
+}
+.paragraph_text{
+    font-size:25px;
+    margin-right:15px;
+}
+.boxes{
+    margin-top:30px;
+    margin-bottom:60px;
+}
+.boxes p{
+    font-size:25px;
+    display: inline;
+    background-color: rgba(128, 128, 128, 0.394);
+    padding:5px;
+    border-radius: 3px;
+}
+#news{
+    margin-top:20px;
+}
+.news_container{
+    display:flex;
+    margin-top:20px;
+}
+.news_date{
+    font-size:20px;
+    margin-right:15px;
+}
+.news_date p{
+    background-color: rgba(128, 128, 128, 0.174);
+    padding:5px;
+    border-radius: 3px;
+}
+.bullet_point{
+    font-size:25px;
+    margin-left:30px;
+}
+/*------------- Syllabus------------------ */
+.syllabus_div{
+    display:flex;
+    font-size:25px;
+}
+.week{
+    margin-right:70px;
+}
+.week p{
+    background-color: rgba(128, 128, 128, 0.174);
+    padding:10px;
+    border-radius: 3px;
+    font-size:20px;
+}
+.syllabus_flexbox{
+    display:flex;
+    flex-wrap: wrap;
+}
+.syllabus_flexbox span{
+    margin-right:20px;
+}
+.slides{
+    background-color: plum;
+    padding:10px;
+    border-radius: 7px;
+}
+.starter_code{
+    background-color:rgb(63, 110, 193);
+    padding:10px;
+    border-radius: 7px;
+}
+.checkoff_form{
+    background-color: rgba(255, 0, 0, 0.298);
+    padding:10px;
+    border-radius: 7px;
+}
+.solution{
+    background-color: rgba(0, 128, 0, 0.335);
+    padding:10px;
+    border-radius: 7px;
+}
+#ama_responses{
+    margin-bottom:200px;
+}
+.instructor_pics{
+    display:flex;
+    /* justify-content: space-around; */
+    font-size:25px;
+    flex-wrap: wrap;
+}
+.instructor_pics img{
+    border-radius: 50%;
+    margin-right:100px;
+}
+/*----------------media queries----------------*/
+@media screen and (max-width: 767px) {
+    /* .navbar{
+        margin-left:5vw;
+        position: sticky;
+        top: 0;
+        align-self: flex-start;
+        font-size: 30px;
+        margin-right:3vw;
+    } */
+    .navbar{
+        position:static;
+        display:flex;
+        font-size:15px;
+        justify-content: space-around;
+        width:100vw;
+        margin-left: 0px;
+        margin-bottom:30px;
+    }
+    .paragraph_text{
+        font-size:15px;
+    }
+    .bullet_point{
+        font-size: 15px;
+    }
+    .navbar img{
+        width:0px;
+    }
+    .container{
+        padding-top:30px;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        /* flex-wrap:nowrap; */
+    }
+    .intro h1{
+        font-size:25px;
+    }
+    .syllabus_div{
+        font-size:15px;
+    }
+    h2{
+        font-size:20px;
+    }
+    h1{
+        font-size:25px;
+    }
+    .boxes p{
+        font-size:15px;
+    }
+    .news_date p{
+        font-size: 15px;
+    }
+    .instructor_pics{
+        font-size: 15px;
+    }
+    .text_container{
+        margin-left: 0px;
+        padding:0 10px 0 10px;
+    }
+    .week p{
+        font-size:10px;
+    }
+    .instructor_pics img{
+        height:100px;
+    }
+}
